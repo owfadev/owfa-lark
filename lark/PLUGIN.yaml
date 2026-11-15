@@ -1,11 +1,11 @@
 id: lark
-version: 0.5
+version: 0.6
 depends:
   - domain
   - wiki
   - trust
   - log
-updated: 2026-10-06
+updated: 2026-11-16
 attachment:
   - "wiki/lark/ — external pointer territory (one profile directory per enterprise, directory name = lark-cli --profile name; creating the directory creates the profile, no central declaration page)"
 fields:

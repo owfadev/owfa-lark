@@ -12,7 +12,7 @@ Map the Lark resources reachable by lark-cli into `wiki/lark/` territory pages �
 ## Scope
 
 Write: lark (pointer pages, archive-page mechanical sections, and domain hubs), log, hot, index
-Read: registry (`.meta/protocol/registry.yaml`, field and value-set anchor), lark domain-plugin hub pages (docs.md / im.md etc.), lark-cli (enumeration and metadata)
+Read: registry (`.owfa/protocol/registry.yaml`, field and value-set anchor), lark domain-plugin hub pages (docs.md / im.md etc.), lark-cli (enumeration and metadata)
 
 ## Steps
 
@@ -21,7 +21,7 @@ Read: registry (`.meta/protocol/registry.yaml`, field and value-set anchor), lar
    - docs domain: read the `docs.md` areas of interest (`docs` block mapping) → enumerate via `lark-cli --profile <name>` (knowledge-space node tree / drive file tree) → resolve the object set of the areas of interest → diff against the `docs/` pointer-page token set → create pages for additions, modify pages for changes (frontmatter mechanical-field overwrite), mark disappearances `status: deprecated`; if the structure digest is stale, re-distill and reset stale_after
    - im domain: read the `im.md` policy (`im` block mapping) → enumerate all chats via `im +chat-list` → diff against the `im/chats/` group-archive token set → create (group-purpose description distillation + key_members starting from the owner) / modify the mechanical section / mark departures `status: deprecated`; **people are never enumerated** (emergence-based, see the lark-im block of the injection region); key_members appends wikilinks for already-archived members
 3. **Present the reconciliation preview** (added / changed / deprecated lists) and wait for user confirmation
-4. **Post-write pipeline** (deterministic, mechanical and automatic, no prompting): `python .meta/scripts/pipeline.py verify` (post-write self-verification; on failure, go back and fix); then commit per the commit discipline (`映射: <profile>/<domain>`, see the vocabulary in `.meta/protocol/actions.md`)
+4. **Post-write pipeline** (deterministic, mechanical and automatic, no prompting): `python .owfa/plugins/domains/personal/pipeline.py verify` (post-write self-verification; on failure, go back and fix); then commit per the commit discipline (`映射: <profile>/<domain>`, see the vocabulary in `.owfa/protocol/actions.md`)
 5. Report: profile / domain / added / changed / deprecated counts
 
 ## Prohibitions
@@ -73,14 +73,14 @@ Output language takes the default key of the language declaration page `wiki/lan
 <!-- /usage:trust -->
 
 <!-- usage:index -->
-- Post-write rebuild (mechanical, automatic): `python .meta/scripts/pipeline.py index` (index — overflow-offloading scheme, including deletion of obsolete old indexes after merge-back) and the same script's `tags` (tag reverse index); LLMs never hand-write indexes
+- Post-write rebuild (mechanical, automatic): `python .owfa/plugins/domains/personal/pipeline.py index` (index — overflow-offloading scheme, including deletion of obsolete old indexes after merge-back) and the same script's `tags` (tag reverse index); LLMs never hand-write indexes
 <!-- /usage:index -->
 
 <!-- usage:hot -->
-- Writing entries (mechanical, automatic): `python .meta/scripts/pipeline.py hot <type> "<wikilink + one-sentence essence>"` (type value set same as log, see the log block of the AGENTS injection region); window eviction and truncation are performed by the script
+- Writing entries (mechanical, automatic): `python .owfa/plugins/domains/personal/pipeline.py hot <type> "<wikilink + one-sentence essence>"` (type value set same as log, see the log block of the AGENTS injection region); window eviction and truncation are performed by the script
 <!-- /usage:hot -->
 
 <!-- usage:log -->
-- Writing lines (mechanical, automatic): `python .meta/scripts/pipeline.py log <type> "<one sentence>" [--domain <domain>]` (type value set in the log block of the AGENTS injection region; domain tag = domain-plugin name such as bb/lark/vault, mandatory for in-domain transactions, omitted for framework and native transactions); rolling window and archiving are performed by the script
+- Writing lines (mechanical, automatic): `python .owfa/plugins/domains/personal/pipeline.py log <type> "<one sentence>" [--domain <domain>]` (type value set in the log block of the AGENTS injection region; domain tag = domain-plugin name such as bb/lark/vault, mandatory for in-domain transactions, omitted for framework and native transactions); rolling window and archiving are performed by the script
 <!-- /usage:log -->
 <!-- cmd-inject:end -->

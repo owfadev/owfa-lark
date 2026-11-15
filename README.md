@@ -8,4 +8,4 @@ Your Feishu/Lark workspace becomes part of the workspace your agent already read
 - Calendar events become timeline entries automatically; meeting follow-ups stop falling through cracks
 
 
-vault-wiki domain package **lark** — see [PKG.yaml](PKG.yaml) for members/connectors/compat; mechanism in the [framework](https://github.com/owfadev/owfa) (.meta/docs/packages.md).
+vault-wiki domain package **lark** — see [PKG.yaml](PKG.yaml) for members/connectors/compat; mechanism in the [framework](https://github.com/owfadev/owfa) (.owfa/docs/packages.md).
