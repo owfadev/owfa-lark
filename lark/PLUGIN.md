@@ -28,7 +28,8 @@
 ## Changelog
 
 - 0.6 (2026-11-16) dead-path fix in the lark-map command skill — the post-write pipeline references rewritten to the suite path `python .owfa/plugins/domains/personal/pipeline.py <index|tags|hot|log|verify>`, registry pointer now `.owfa/protocol/registry.yaml`, commit-discipline vocabulary pointer now `.owfa/protocol/actions.md` (`.meta/` was removed from the framework on 2026-11-15); README and the issue template's `.meta/docs/*` pointers likewise moved to `.owfa/docs/*`
-- 0.5 (2026-10-06) inject line compressed to pointer density (issue #12 layer discipline) (family roster duty added) — procedural detail lives in usage / PLUGIN.md / skills- 0.4 2026-10-02: global-domain batch one — attach the mandatory log bridge edge; constitution principle 11, kernel verifies completeness
+- 0.5 (2026-10-06) inject line compressed to pointer density (issue #12 layer discipline) (family roster duty added) — procedural detail lives in usage / PLUGIN.md / skills
+- 0.4 (2026-10-02) global-domain batch one — attach the mandatory log bridge edge; constitution principle 11, kernel verifies completeness
 - 0.3 2026-09-22: domainization — depends adds domain; external-domain-base positioning means pointers land without materialization; territory conventions unchanged; contract in the domain plugin
 - 0.2 2026-09-19: establish the two-form partitioning of archive pages — frontmatter mechanical section, body accumulation section append-only; the architectural premise for the im domain's archive pages; pointer page semantics unchanged
 - 0.1 2026-09-19: established — four rounds of design convergence: pointer-only, abandoning vault storage; profile-first segmentation; trust lazy refresh replacing the daemon; base and domain plugins split into families with the base owning the abstraction, domain plugins serving in parallel
